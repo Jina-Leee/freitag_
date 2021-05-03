@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>freitag</title>
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<style type="text/css">
+		.noto_sans{font-family: 'Noto Sans KR', sans-serif;}
+		.anton{font-family: 'Bebas Neue', cursive;letter-spacing: ;}
+
+
+		img{display: block;}
+		h1,h2,h3,p,body{margin: 0px;}
+		.headerbg{background: url(freitag_header2.jpg);background-size: 100% auto;width: 100%;padding-top: 40px;}
+		.row{width: 900px;margin: auto;}
+		.row_title{width: 1400px;}
+		.row_rel{width: 1680px;margin : auto;position: relative;}
+		.rowflex{display: flex;padding: 0px 5px;}
+		.black{background: black;margin-top:300px;}
+		.link{color: white;}
+		.col-3{width: 390px; margin:0px 5px;background:white;}
+		.col-5{width: 490px;margin: 0px 5px; background: white;}
+		.blackline{width: 100%;height: 30px;background-color: black;}
+		.whiteline{width: 100%;height: 30px;background-color: white;}
+		.lookbookstart{text-align: right;background: black;color: white;}
+		.lookbookstart1{font-size: 3.6em;}
+		.lookbookstart2{font-size: 2.8em;}
+		.png{display: block; width: 100%;}
+		.paddingtop{padding-top: 600px;}
+		.text{font-size: 1.3em;line-height: 1.7;margin-top: 20px;font-weight: 400;letter-spacing: -1;word-break: keep-all;}
+		.text_paddingtop{padding-top: 40px;}
+		.sizetext{font-size: 1.2em;line-height: 1.5;padding-bottom: 20px;margin-top: 40px;font-weight: 500;}
+		.nametext{font-size: 2.2em;line-height: 1.2;font-weight: 700;}
+		.nametextbig{font-size: 3.8em;margin-top: 15px;line-height: 1.2;font-weight: 700;}
+		.banner_paddingtop{padding-top: 350px;}
+		.abs{position: absolute;}
+		.h-600{height: 600px;}
+		.h-800{height: 800px;}
+		.paddingleft{padding-left: 30px;}
+		.paddingright{padding-right: 30px;}
+		.lookbookpaddingtop{padding-top: 30px;}
+		.hwi_img{padding-top: 40px;}
+
+		.hwimainbg{width: 100%;position: absolute;z-index: 1;}
+		.hwi_1{position: absolute;width: 600px;top: 280px;left: 60%;z-index: 2;}
+		.hwi_2{position: absolute;width: 550px;top: 550px;left: 500px;z-index: 2;}
+		.hwimain_text{top: 420px;left: 345px;z-index: 3;}
+		.hwitext{font-size: 4.2em;}
+		.hwitextbig{font-size: 8em;line-height: 1;}
+		.hwi_2_hover:hover{transform: rotate(30deg);}
+		.hwi_1_hover:hover{transform: rotate(-15deg);}
+
+		.lassiemainbg{width: 100%;position: absolute;z-index: 1;}
+		.lassie_1{position: absolute;width: 650px;top: 50px;left: 250px;z-index: 2;}
+		.lassie_2{position: absolute;width: 580px;top: 420px;left: 550px;z-index: 2;}
+		.lassiemain_text{position: absolute;z-index: 3;left: 48%;top: 200px;text-align: right;}
+		.lassietext{font-size: 4.2em;color: white;}
+		.lassietextbig{font-size: 8em;line-height: 1;color: white;}
+		.lassie_1_hover:hover{transform: scale(1.2);}
+		.lassie_2_hover:hover{transform: rotate(25deg);}
+
+		.mossmainbg{width: 100%;position: absolute;z-index: 1;}
+		.mossmain_text{left: 55%;top: 910px; z-index: 3;}
+		.mosstext{font-size: 4.2em;}
+		.mosstextbig{font-size: 8em;line-height: 1;}
+		.moss_1{position: absolute;width: 700px;top: 445px;left: 155px;z-index: 2;}
+		.moss_2{position: absolute;width: 700px;left: 52%;top: 50px;z-index: 2;}
+		.moss_1_hover:hover{transform: rotate(25deg);}
+
+		.lelandmainbg_blue{width: 100%;position: absolute;top: 250px;z-index: 2;}
+		.lelandmainbg_yellow{width: 110%;position: absolute;top: 500px;z-index: 4;left: -5%}
+		.lelandmain_text{left: 200px;top: 250px;}
+		.lelandtext{font-size: 4.2em;}
+		.lelandtextbig{font-size: 8em;line-height: 1;}
+		.leland_1{position: absolute;left: 860px;top: 5px;z-index: 1;}
+		.leland_2{position: absolute;left: 600px;top: 240px;z-index: 3;}
+		.leland_yellow_hover:hover{transform: rotate(5deg);}
+
+		.miamimainbg{width: 100%;position: absolute;z-index: 1;}
+		.miamimain_text{z-index: 4;text-align: right;left: 46%;top: 150px;}
+		.miamitext{font-size: 4.2em;color: white;}
+		.miamitextbig{font-size: 8em;line-height: 1;color: white;}
+		.miami_1{position: absolute;width: 700px; left: 90px;top: 250px;z-index: 2}
+		.miami_2{position: absolute;width: 600px; left: 400px;top: 40px;z-index: 3}
+		.miami_3{position: absolute;width: 450px; left: 68%;top: 470px;z-index: 3}
+		.miami_2_hover:hover{transform: rotate(-25deg);}
+		.miami_3_hover:hover{transform: rotate(30deg);}
+
+		.informationtext{font-family: 'Noto Sans KR', sans-serif;font-size: 2.6em;padding-top: 110px;}
+		.clicktext{font-family: 'Noto Sans KR', sans-serif;padding-top: 40px;padding-bottom: 15px;color: white;}
+		.row2{width: 800px;margin: auto;}
+		.linkflexleft{width: 60%; margin: 0px 5px;}
+		.linkflexright{width: 40%; margin: 0px 5px;}
+		.rounded{border-radius: 50%;margin-top: 110px;}
+		.height550{height: 550px;}
+		.linklogo{width: 350px;border: 4px solid white;}
+		.aboutfreitag:hover{opacity: 0.7; transition: all 0.3s;}
+
+		.footerbg{width: 100%;position: absolute;z-index: 1;}
+		.footer_text{z-index: 2;left: calc(50% - 125px);top: 350px;}
+		.footertext{font-size: 1.2em;font-weight: 500;}
+		.footer_marginbottom{margin-bottom: 200px;}
+		.footer_paddingtop{padding-top: 100px;}
+		
+		nav{display: inline;position:fixed;z-index: 10;background-color: black;color: white;height: 40px;width: 100%;}
+		.flex_nav{display: flex;padding: 9px 0px;margin-left: 220px;}
+		.flex_nav2{display: flex;padding: 9px 0px;}
+		.col_nav{width: 250px;text-align: center;}
+		.col_nav2{width: 250px;}
+		.logo_img{width: 150px;padding-top: 12px;margin-left: 100px;}
+		
+		.nav_html:hover{opacity: 0.7;transition: all 0.3s;}
+		.nav_text{color: white;font-size: 0.9em;}
+		
+	</style>
+</head>
+<body>
+	<header>
+			<section>
+		<div>
+			<nav class="flex_nav2">
+				<div class="col_nav2">
+					<img src="freitag_logo.png" class="logo_img">
+				</div>
+				<div class="flex_nav">
+					<div class="col_nav noto_sans"><a href="index.html" target="_self"><p class="nav_text nav_html">FREITAG lookbook</p></a>
+					</div>
+					<div class="col_nav noto_sans"><a href="about.html" target="_self"><p class="nav_text nav_html">about FREITAG</p></a>
+					</div>
+					<div class="col_nav noto_sans"><a href="https://www.freitag.ch/en" target="_blank"><p class="nav_text nav_html">FREITAG main channel</p></a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</section>
+		<div>
+			<img src="freitag_header2.jpg" class="headerbg">
+		</div>
+	</header>
+	<section class="lookbookstart">
+		<div class="blackline" style="margin-top: 400px;"></div>
+		<div class="whiteline"></div>
+		<div class="row_title" style="padding-top: 150px;">
+			<h3 class="anton lookbookstart1">#Outfit Of The Day</h3>
+		</div>
+		<div class="row_title lookbookstart2" style="padding-bottom: 150px; margin-bottom: 400px;">
+			<h1 class="lookbookstart2 anton">Freitag LOOKBOOK</h1>
+		</div>
+	</section>
+	<section>
+		<div class="row_rel">
+			<div class="h-600">
+				<div class="abs hwimain_text">
+					<h2 class="hwitext noto_sans">MESSENGER BAG</h2><br>
+					<h1 class="hwitextbig noto_sans">HAWAII<br>FIVE-O</h1></div>
+				<img src="hwi_lb_mainbg.png" class="hwimainbg">
+				<img src="hwi_main2.png" class="hwi_1 hwi_1_hover">
+				<img src="hwi_main1.png" class="hwi_2 hwi_2_hover">
+			</div>
+		</div>
+	</section>
+	<section class="paddingtop">
+		<div class="row rowflex">
+			<div class="col-5 hwi_img">
+				<img src="hwifiveo_lookbook.png" class="png">
+			</div>
+			<div class="col-3 paddingleft lookbookpaddingtop">
+				<h2 class="nametext noto_sans">MESSENGER XS</h2>
+				<h2 class="nametextbig noto_sans">#F41<br> HAWAII FIVE-O</h2>
+				<!--<p class="sizetext noto_sans">300 * 90 * 170mm (l * w * h)<br>
+					11.8 * 3.5 * 6.7 inch (l * w * h)<br>
+					weight: 460g</p>-->
+				<p class="text noto_sans text_paddingtop">너무 작지도 크지도 않은 적당한 사이즈의 메신저 백</p>
+				<p class="text noto_sans">파우치, 핸드폰, 아이패드, 우산 등 생각보다 많은 소지품이 들어가고 가방 안에 물건을 적게 넣더라도 모양이 흐트러지지 않는다. 프라이탁 메신저 백은 대부분 찍찍이이다. 하와이파이브오 역시 찍찍이로 되어 있고, 부직포가 위까지 있어 물건을 가방 깊이보다 더 넣을 수 있다. 가방 사이드에 있는 안전벨트와 닮은 버클로 끈 조절을 할 수 있다. 적당한 사이즈로 가볍게 메기에 부담 없는 가방이다. 가격도 다른 프라이탁 제품들에 비해서는 저렴한 가격이라 프라이탁 입문자들에게 추천하는 제품이다.</p>
+			</div>
+		</div>
+	</section>
+	<section class="banner_paddingtop">
+		<div class="main row_rel">
+			<div class="h-600">
+				<div class="abs lassiemain_text">
+					<h2 class="lassietext noto_sans">MESSENGER BAG</h2>
+					<h1 class="lassietextbig noto_sans">LASSIE</h1>
+				</div>
+				<img src="lassie_lb_mainbg.png" class="lassiemainbg">
+				<img src="lassie_main1.png" class="lassie_1 lassie_1_hover">
+				<img src="lassie_main2.png" class="lassie_2 lassie_2_hover">
+			</div>
+		</div>
+	</section>
+	<section class="paddingtop">
+		<div class="row rowflex"> 
+			<div class="col-3 paddingright lookbookpaddingtop">
+				<h2 class="nametext noto_sans">MESSENGER SMALL</h2>
+				<h2 class="nametextbig noto_sans">#F11 LASSIE</h2>
+				<!--<p class="sizetext noto_sans">270 * 90 * 240mm (l * w * h)<br>
+					10.6 * 3.5 * 9.4 inch (l * w * h)<br>
+					weight: 540g</p>-->
+				<p class="text noto_sans text_paddingtop">프라이탁 메신저 백 중에서 클래식 라인에 속한 라씨</p>
+				<p class="text noto_sans">클래식 메신저 가방 중에서 작은 편에 속한다. 라씨는 메신저 백 라인이지만 거칠고 스포티한 느낌이 덜한 편이라 비즈니스, 캐주얼룩에도 잘 어울려 많은 사람들의 사랑을 받는 제품이다. 라씨는 사이즈 변형이 가능하고 그때를 대비한 천이 안으로 말려 들어가 있다. 이 부분을 펼치면 사이즈 변형이 된다. 안으로 말려 들어간 여분의 천은 가방을 사용할 때는 전혀 불편함이 없으므로 걱정하지 않아도 된다. 소지품을 조금 넣으면 옆면이 납작하므로 어느 정도 소지품이 들어가 있어야 가방 모양이 잘 잡히고 예쁘다. 하와이파이브오와 마찬가지로 가방 옆에 있는 버클로 끈 조절이 가능하다.
+			</div>
+			<div class="col-5">
+				<img src="lassie_lookbook.png" class="png"></div>
+		</div>
+	</section>
+	<section class="banner_paddingtop">
+		<div class="main row_rel">
+			<div class="h-800">
+				<div class="abs mossmain_text">
+					<h2 class="mosstext noto_sans">LAPTOP BAG</h2>
+					<h1 class="mosstextbig noto_sans">MOSS</h1>
+				</div>
+				<img src="moss_lb_mainbg.png" class="mossmainbg">
+				<img src="moss_main1.png" class="moss_1 moss_1_hover">
+				<img src="moss_main2.png" class="moss_2 moss_2_hover">
+			</div>
+		</div>
+	</section>
+	<section class="paddingtop">
+		<div class="row rowflex">
+			<div class="col-5">
+				<img src="moss_lookbook.png" class="png">
+			</div>
+			<div class="col-3 paddingleft lookbookpaddingtop">
+				<h2 class="nametext noto_sans">LAPTOP BAG SMALL</h2>
+				<h2 class="nametextbig noto_sans">#F304 MOSS</h2>
+				<!--<p class="sizetext noto_sans">370 * 75 * 260mm (l * w * h)<br>
+					14.6 * 3.0 * 10.2 inch (l * w * h)<br>
+					weight: 850g-->
+				</p>
+				<p class="text noto_sans text_paddingtop">크기가 큰 소지품과 노트북을 들고 다니기에 적합한 모스</p>
+				<p class="text noto_sans">프라이탁 노트북 가방 라인 중에 가장 작은 제품은 모스이다. 그렇지만 15인치 노트북도 수납이 가능할 정도로 넉넉하다. 앞에 소개한 제품들과는 다르게 찍찍이가 아닌 지퍼로 여닫는 제품이다. 가방의 옆면까지 지퍼가 연결되어 있어 활짝 열어 노트북을 꺼내기에 용이하다. 노트북 가방 답게 가방 안에 노트북을 넣기 좋게 공간이 분리되어 있다. 모스는 노트북을 가지고 다니는 직장인이나 대학생들에게 딱 맞는 제품이다. 노트북 외에도 큰 책이나 소지품이 많은 사람들에게 추천한다.</p>
+			</div>
+		</div>
+	</section>
+	<section class="banner_paddingtop">
+		<div class="main row_rel">
+			<div class="h-600">
+				<div class="abs lelandmain_text">
+					<h2 class="lelandtext noto_sans">TOTE BAG</h2>
+					<h1 class="lelandtextbig noto_sans">LELAND</h1>
+				</div>
+				<img src="leland_lb_mainbg_blue.png" class="lelandmainbg_blue">
+				<img src="leland_lb_mainbg_yellow.png" class="lelandmainbg_yellow leland_yellow_hover">
+				<img src="leland_main1.png" class="leland_1">
+				<img src="leland_main2.png" class="leland_2">
+			</div>
+		</div>
+	</section>
+	<section class="paddingtop">
+		<div class="row rowflex">
+			<div class="col-5">
+				<img src="leland_lookbook.png" class="png">
+			</div>
+			<div class="col-3 paddingleft lookbookpaddingtop">
+				<h2 class="nametext noto_sans">TOTE BAG SMALL</h2>
+				<h2 class="nametextbig noto_sans">#F202 LELAND</h2>
+				<!--<p class="sizetext noto_sans">270 * 80 * 360mm (l * w * h)<br>
+					10.6 * 3.1 * 14.2 (l * w * h)<br>
+					weight: 690g-->
+				</p>
+				<p class="text noto_sans text_paddingtop">많은 물건이 수납 가능한 토트 백 리랜드</p>
+				<p class="text noto_sans">리랜드는 앞에 소개한 모스와 다르게 좁고 깊은 가방이다. 내부에 나누어진 공간은 없지만 작은 소지품들을 위한 작은 지퍼 포켓이 있다. 지퍼 포켓 앞에는 핸드폰이 들어갈 사이즈의 포켓이 하나 더 있다. 대부분의 토트 백과는 달리 프라이탁 토트 백 리랜드에는 입구에 지퍼가 있다. 다른 제품들과 마찬가지로 끈 조절이 가능한 버클이 있어 숄더 백으로도,<br> 크로스 백으로도 사용 가능한 제품이다.</p>
+			</div>
+		</div>
+	</section>
+	<section class="banner_paddingtop">
+		<div class="main row_rel">
+			<div class="h-600">
+				<div class="abs miamimain_text">
+					<h2 class="miamitext noto_sans">SHOPPING BAG</h2>
+					<h1 class="miamitextbig noto_sans">MIAMI VICE</h1>
+				</div>
+				<img src="miami_lb_mainbg.png" class="miamimainbg">
+				<img src="miami_main1.png" class="miami_1">
+				<img src="miami_main2.png" class="miami_2 miami_2_hover">
+				<img src="miami_main3.png" class="miami_3 miami_3_hover">
+			</div>
+		</div>
+	</section>
+	<section class="paddingtop">
+		<div class="row rowflex">
+			<div class="col-3 paddingright lookbookpaddingtop">
+				<h2 class="nametext noto_sans">SHOPPING BAG</h2>
+				<h2 class="nametextbig noto_sans">#F52<br>MIAMI VICE</h2>
+				<!--<p class="sizetext noto_sans">330 * 160 * 400mm (l * w * h)<br>
+					13.0 * 6.3 * 15.7 inch (l * w * h)<br>
+					weight: 550g</p>-->
+				<p class="text noto_sans text_paddingtop">스위스 종이 쇼핑백에서 영감을 얻어 제작된 마이애미 바이스</p>
+				<p class="text noto_sans">마이애미 바이스는 종이 쇼핑백의 형태이다. 가방 입구에 지퍼나 여밈 장치 없이 널찍한 수납을 강점으로 가진 제품이다. 그래서 크기에 비해 가방의 무게가 가벼운 편이다. 제품의 형태도 단순하다 보니 프라이탁 특유의 다양하고 화려한 색감이 더 눈에 들어온다. 의류, 책 등 가리지 않고 가방에 가득 물건을 채워 넣기에 최적화 되어 있는 제품이다. 가격도 프라이탁 가방 중에 저렴한 편이라 사람들이 많이 구매하는 가방이다.</p>
+			</div>
+			<div class="col-5">
+				<img src="miamivice_lookbook.png" class="png">
+			</div>
+		</div>
+	</section>
+	<section class="black">
+		<div class="row2 rowflex">
+			<div class="link linkflexleft height550">
+				<div>
+				<h1 class="informationtext noto_sans">MORE INFORMATION ABOUT FREITAG</h1></div>
+				<div><p class="clicktext noto_sans">click on the logo</p></div>
+			<div class="height150">
+				<a href="about.html" target="_self"><img src="freitag_logo2.jpg" class="png linklogo aboutfreitag"></a>
+			</div>
+
+		</div>
+			<div class="linkflexright black">
+			<img src="freitag_bike.png" class="rounded png">
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer_paddingtop footer_marginbottom">
+		<div class="main row_rel">
+			<div class="h-800">
+				<div class="abs footer_text">
+					<p class="footertext noto_sans">designed by Jina LEE, 2021</p>
+				</div>
+				<img src="footer_bg.png" class="footerbg">
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
